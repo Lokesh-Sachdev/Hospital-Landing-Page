@@ -1,0 +1,49 @@
+.testcard__container {
+  width: 350px;
+  padding: 2rem;
+
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .testcard__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .testcard__reviews {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .testcard__name {
+      font-size: 24px;
+      font-weight: 600;
+      overflow: hidden;
+    }
+
+    p {
+      display: -webkit-box;
+      max-width: 250px;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .testcard__heading {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+.bg__img {
+  background-image: url(../../images/card-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  width: 390px;
+}

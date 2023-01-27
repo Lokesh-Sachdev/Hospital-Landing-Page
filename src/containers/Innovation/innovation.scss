@@ -1,0 +1,42 @@
+.innovative__container {
+  display: flex;
+
+  .innovative__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards__section {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .card {
+      height: 150px;
+      position: relative;
+      pointer-events: none;
+
+      &:nth-child(1) {
+        grid-area: 1/1;
+      }
+      &:nth-child(2) {
+        grid-area: 2/2;
+      }
+      &:nth-child(3) {
+        grid-area: 3/1;
+      }
+
+      img {
+        position: absolute;
+        width: 150px;
+        bottom: 50px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    .cards__section {
+      margin: 5rem auto;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.specialist__container {
+  background-image: url(../../images/specialist-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  .cards {
+    .card {
+      height: 350px;
+      padding: 0;
+
+      pointer-events: none;
+      display: flex;
+
+      .card-title,
+      p {
+        text-align: left;
+        padding-left: 1rem;
+      }
+
+      .icon__box {
+        display: none;
+      }
+
+      img {
+        height: 250px;
+        margin: 0;
+      }
+    }
+  }
+}

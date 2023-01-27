@@ -1,0 +1,20 @@
+.testimonial__container {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-card);
+    border-radius: 20px;
+  }
+
+  .testimonial__listing {
+    width: max-content;
+    display: flex;
+    gap: 2rem;
+
+    padding: 1rem;
+  }
+}

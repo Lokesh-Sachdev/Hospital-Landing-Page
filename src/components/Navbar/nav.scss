@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2rem;
+
+  img {
+    margin: 0;
+  }
+
+  .nav__items,
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+
+    margin: 0;
+
+    li {
+      margin-right: 3rem;
+      color: var(--color-nav-text);
+      font-weight: 400;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
